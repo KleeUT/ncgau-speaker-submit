@@ -48,6 +48,9 @@ export default () => {
   });
 
   useEffect(() => {
+    if (!accessToken) {
+      return;
+    }
     if (!loading && !error && !hasLoaded) {
       fetchSubmissions(setLoading, setData, setError, accessToken);
       setHasLoaded(true);
