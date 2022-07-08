@@ -76,7 +76,9 @@ export default () => {
             },
           })
         }
-      ></button>
+      >
+        Log In
+      </button>
     );
   }
 
